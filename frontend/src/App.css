@@ -1,0 +1,32 @@
+/* Conteneur pour permettre le défilement de gauche à droite */
+.plane-scroll-container {
+  width: 95vw;
+  height: 400px;
+  overflow-x: auto; /* Active le scroll horizontal */
+  overflow-y: hidden;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 40px;
+  border-radius: 20px;
+  margin: 20px auto;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  white-space: nowrap;
+}
+
+/* Style de la barre de défilement pour qu'elle soit plus jolie */
+.plane-scroll-container::-webkit-scrollbar {
+  height: 10px;
+}
+.plane-scroll-container::-webkit-scrollbar-thumb {
+  background: #44bd32;
+  border-radius: 10px;
+}
+
+.plane-svg-horizontal {
+  display: block;
+}
+
+.admin-layout {
+  display: flex;
+  flex-direction: column; /* Liste des demandes en haut ou en bas */
+  gap: 20px;
+}
